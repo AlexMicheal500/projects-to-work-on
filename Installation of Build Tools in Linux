@@ -1,0 +1,18 @@
+1. Download intellij
+2. Go to the gitlab and clone the repository using:
+      git init .
+      git clone <SSH Clone>
+3. Then we enter intelliJ and we make sure to select Maven when opening the project and we will find out that dependencies are been installed automatically.
+4. We will go to the main application and we will see red lines. This is because JDK is not installed. when JDK is installed, they will disappear.
+  To do this, go to FILE > Project Structure
+5. Then we install JDK using terminal on linux or website on windows. JDK installed should be JDK 15
+   however for linux terminal, since we cannot run the install command directly, then we use the following commands to first check the versions available, then we install.
+       java --version
+       sudo apt install openjdk-13-jre-headless
+6. Check viddeo by Nana to see how she made the file appear in documents so it can be slected when choosing an SDK.
+7. When it is done you will see green triangles on the application file and if you click it, it will run the app.
+8. Then we have to install maven to build the app using:
+        sudo apt install maven
+9. Then we navigate to the app file and then run the build command:
+        mvn package
+    
